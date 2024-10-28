@@ -1,0 +1,94 @@
+baseurl = "https://events.illc.uva.nl/PhilMathReading/"
+buildFuture = true
+defaultContentLanguage = "en"
+languageCode = "en-GB"
+title = "Φ-Math"
+theme = "mainroad"
+
+# [pagination]
+# pagerSize = 10
+
+[Params]
+  copyright = "Φ-Math — CC BY-NC-SA 4.0"
+  description = "Φ-Math is a reading group in philosophy of mathematics from the Institute for Logic, Language and Computation (ILLC) at the University of Amsterdam." # Site description. Used in meta description
+  opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
+#   readmore = false # Show "Read more" button in list if true
+#   authorbox = true # Show authorbox at bottom of pages if true
+#   toc = true # Enable Table of Contents
+  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+  post_meta = ["date", "categories"] # Order of post meta information
+  mainSections = ["events"] # Specify section pages to show on home page and the "Recent articles" widget
+  # dateformat = "2024-01-13" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+#   customCSS = ["css/custom.css"] # Include custom CSS files
+#   customJS = ["js/custom.js"] # Include custom JS files
+
+[Params.style.vars]
+  highlightColor = "#752099" # Override highlight color
+ 
+# Override font-family sets
+# Take care of different quotes OR escaping symbols in these params if necessary
+#  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
+# Secondary font-family set responsible for pre, code, kbd, and samp tags font
+# fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+ 
+[Params.logo]
+  image = "favicon.ico" # Logo image. Path relative to "static"
+  title = "Φ-Math" # Logo title, otherwise will use site title
+  subtitle = "Reading group in philosophy of mathematics at the ILLC" # Logo subtitle
+ 
+# [Params.thumbnail]
+#   visibility = ["list", "post"] # Control thumbnail visibility
+ 
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right" # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = [ "social", "search", "taglist"]
+ 
+[Params.widgets]
+  # recent_num = 10 # Set the number of articles in the "Recent articles" widget
+  categories_counter = true # Enable counter for each category in "Categories" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget
+ 
+# [Params.widgets.social]
+#   cached = false # activate cache if true
+#   # Enable parts of social widget
+#   facebook = "username"
+#   twitter = "username"
+#   instagram = "username"
+#   linkedin = "username"
+#   telegram = "username"
+#   github = "username"
+#   gitlab = "username"
+#   bitbucket = "username"
+#   email = "example@example.com"
+#
+# Custom social links
+# [[Params.widgets.social.custom]]
+#   title = "Youtube"
+#   url = "https://youtube.com/user/username"
+#   icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
+#   rel = "noopener noreferrer" # Set to false to remove the rel attribute
+ 
+[[Params.widgets.social.custom]]
+  title = "Videocalls"
+  url = "https://uva-live.zoom.us/j/82899498334"
+
+[[Params.widgets.social.custom]]
+  title = "RSS"
+  url = "/PhilMathReading/index.xml"
+
+[[Params.widgets.social.custom]]
+  title = "Source code"
+  url = "https://github.com/phi-math-website/phi-math-website"
+
+[Params.widgets.search]
+  url = "https://google.com/search"
+  [Params.widgets.search.input]
+    name = "sitesearch"
+    pre = ""
