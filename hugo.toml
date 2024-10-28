@@ -9,7 +9,7 @@ theme = "mainroad"
 # pagerSize = 10
 
 [Params]
-  copyright = "Φ-Math — CC BY-NC-SA 4.0"
+  copyright = "Φ-Math — CC-BY-SA 4.0"
   description = "Φ-Math is a reading group in philosophy of mathematics from the Institute for Logic, Language and Computation (ILLC) at the University of Amsterdam." # Site description. Used in meta description
   opengraph = true # Enable OpenGraph if true
   schema = true # Enable Schema
