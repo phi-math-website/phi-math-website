@@ -1,0 +1,14 @@
+baseURL = "https://wasabina67.github.io/hugo-mainroad-example/"
+languageCode = "en"
+title = "Phi-math"
+theme = "mainroad"
+
+defaultContentLanguage = "en"
+
+# paginate = "20"
+# googleAnalytics = "G-xxxxxxxxxx"
+
+# [Author]
+#   name = "name"
+#   bio = "bio"
+#   avatar = "https://example.com/"
