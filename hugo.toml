@@ -1,4 +1,4 @@
-baseurl = "https://events.illc.uva.nl/PhilMathReading/"
+baseurl = "https://events.illc.uva.nl/Phi-Math/"
 buildFuture = true
 defaultContentLanguage = "en"
 languageCode = "en-GB"
