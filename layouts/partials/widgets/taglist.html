@@ -1,0 +1,24 @@
+{{- $tags := .Site.Taxonomies.tags }}
+{{- if gt (len $tags) 0 }}
+<div class="widget-taglist widget">
+	<h4 class="widget__title">{{ T "tags_title" }}</h4>
+	<div class="widget__content">
+  {{ $tagsFrequencies := slice }}
+  {{- range $name, $taxonomy := $tags }}
+     {{- $tagFrequency := keyVals $taxonomy.Count $name }}
+     {{- $tagsFrequencies = append $tagFrequency $tagsFrequencies }}
+  {{- end }}
+  {{ $tagsFrequencies := sort $tagsFrequencies "Key" "desc" }}
+  {{ $size := $.Site.Params.widgets.taglist.size | default 10 }}
+  {{ $tagsFrequencies := first $size $tagsFrequencies }}
+	{{- range $tagFrequency := $tagsFrequencies }}
+		{{- with $.Site.GetPage (printf "/tags/%s" (index $tagFrequency.Values 0)) }}
+		<a class="widget-taglist__link widget__link btn" href="{{ .RelPermalink }}" title="{{ .Title }}">
+			{{- .Title -}}{{- if .Site.Params.widgets.tags_counter }} ({{ $tagFrequency.Key }}){{ end -}}
+		</a>
+		{{- end }}
+	{{- end }}
+  <a class="widget-taglist__link widget__link btn" href="{{ relURL "tags"}}"title="Show all tags">More...</a>
+	</div>
+</div>
+{{- end }}

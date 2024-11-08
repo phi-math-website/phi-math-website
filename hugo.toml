@@ -92,3 +92,6 @@ theme = "mainroad"
   [Params.widgets.search.input]
     name = "sitesearch"
     pre = ""
+
+[Params.widgets.taglist]
+# size = 10 # How many of the most popular tags to show. Default: 10
