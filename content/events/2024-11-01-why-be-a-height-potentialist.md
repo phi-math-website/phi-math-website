@@ -1,15 +1,15 @@
 +++
 title = 'Why be a Height Potentialist?'
 date = '2024-11-01T17:15:00+01:00'
+duration = '120m'
 categories = ['readings']
 tags = ['potentialism', 'set theory', 'cumulative hierarchy']
+locations = ['SP107 Room F3.20', 'online']
 +++
 
 After talking about the infinite and Frege Arithmetic, it is time to turn to
 potentialism about set-theory. In this session we will turn to potentiality
 about the height of the cumulative hierarchy.
-
-Location: SP107 Room F3.20 and online
 
 Main Readings:
 

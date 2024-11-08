@@ -3,4 +3,4 @@ title = 'Coming soon'
 pager = false
 +++
 
-Coming soon:
+Scheduled events:

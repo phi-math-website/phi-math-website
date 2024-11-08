@@ -5,8 +5,16 @@ languageCode = "en-GB"
 title = "Φ-Math"
 theme = "mainroad"
 
+[outputs]
+  section = ['html', 'rss', 'calendar']
+
 # [pagination]
 # pagerSize = 10
+
+[taxonomies]
+  category = 'categories'
+  location = 'locations'
+  tag = 'tags'
 
 [Params]
   copyright = "Φ-Math — CC-BY-SA 4.0"
@@ -17,9 +25,9 @@ theme = "mainroad"
 #   authorbox = true # Show authorbox at bottom of pages if true
 #   toc = true # Enable Table of Contents
   pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
-  post_meta = ["date", "categories"] # Order of post meta information
+  post_meta = ["date", "locations", "categories"] # Order of post meta information
   mainSections = ["events"] # Specify section pages to show on home page and the "Recent articles" widget
-  # dateformat = "2024-01-13" # Change the format of dates
+  dateformat = "Monday, January 2 15:04:05 2006" # Change the format of dates
   mathjax = true # Enable MathJax
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
@@ -76,12 +84,16 @@ theme = "mainroad"
 #   rel = "noopener noreferrer" # Set to false to remove the rel attribute
  
 [[Params.widgets.social.custom]]
-  title = "Videocalls"
+  title = "Join online meeting"
   url = "https://uva-live.zoom.us/j/82899498334"
 
 [[Params.widgets.social.custom]]
-  title = "RSS"
-  url = "/PhilMathReading/index.xml"
+  title = "Add to calendar"
+  url = "webcal://events.illc.uva.nl/Phi-Math/events/index.ics"
+
+[[Params.widgets.social.custom]]
+  title = "Subscribe to RSS"
+  url = "/Phi-Math/index.xml"
 
 [[Params.widgets.social.custom]]
   title = "Source code"
