@@ -3,4 +3,4 @@ title = 'Coming soon'
 pager = false
 +++
 
-Scheduled events:
+Scheduled events are published here.
