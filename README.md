@@ -1,5 +1,7 @@
 # Φ-Math's website
 
+![Phi-Math's logo. It is a white capital phi on a purple circle](static/favicon.ico)
+
 ## Prerequisites
 
 - [Git](https://git-scm.com/downloads)
