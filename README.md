@@ -38,7 +38,7 @@ This will generate your website in a new `public/` folder. Next, we'll see how
 to upload this to
 [events.illc.uva.nl/Phi-MathReading](https://events.illc.uva.nl/Phi-MathReading).
 
-## Pushing your changes to production
+## Deploy
 
 ### Prerequisites
 
