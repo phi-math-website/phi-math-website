@@ -55,7 +55,7 @@
 
 # Social widget
 - id: social_title
-  translation: "External links"
+  translation: "Special features"
 
 # Tags List widget
 - id: tags_title

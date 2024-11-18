@@ -89,7 +89,7 @@ theme = "mainroad"
 
 [[Params.widgets.social.custom]]
   title = "Add to calendar"
-  url = "webcal://events.illc.uva.nl/Phi-Math/events/index.ics"
+  url = "/Phi-Math/calendar"
 
 [[Params.widgets.social.custom]]
   title = "Subscribe to RSS"
