@@ -6,7 +6,7 @@ weight = 3
 +++
 
 ## Current Members
-- [Alexander Lind](https://msclogic.illc.uva.nl/people/person/5398/Alexander-Lind) (...-2024)
+- [Alexander Lind](https://msclogic.illc.uva.nl/people/person/5398/Alexander-Lind) (...-...)
 
 - [Orestis Dimou Belegratis](https://msclogic.illc.uva.nl/people/person/5551/Orestis-Dimou-Belegratis). (2023-...)
 
@@ -16,11 +16,10 @@ weight = 3
 
 ## Past Members
 
-
-- [Jan Gronwald](https://www.illc.uva.nl/People/Alumni/alumnus/5225/Jan-Gronwald) (YEAR)
+- [Jan Gronwald](https://www.illc.uva.nl/People/Alumni/alumnus/5225/Jan-Gronwald) (...)
 
 ## Founders
 
-- [Evan Iatrou](https://msclogic.illc.uva.nl/people/alumnus/5123/Evangelos-Iatrou) (YEAR)
+- [Evan Iatrou](https://msclogic.illc.uva.nl/people/alumnus/5123/Evangelos-Iatrou) (...)
 
-- [Noel Arteche](https://narteche.github.io/). (YEAR)
+- [Noel Arteche](https://narteche.github.io/). (...)
