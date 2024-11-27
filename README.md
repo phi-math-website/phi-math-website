@@ -38,7 +38,7 @@ hugo
 
 This will generate your website in a new `public/` folder. Next, we'll see how
 to upload this to
-[events.illc.uva.nl/Phi-MathReading](https://events.illc.uva.nl/Phi-MathReading).
+[events.illc.uva.nl/Phi-Math](https://events.illc.uva.nl/Phi-Math).
 
 ## Deploy
 
@@ -55,12 +55,16 @@ commands/configuration files.
 
 ### SSH setup
 
-Logging in directly to the server with SSH is blocked by ICTS. Instead you log in via a 'gateway server'
-with hostname `pascal.ic.uva.nl`. For testing you can log in with SSH using `ssh UVANETID@pascal.ic.uva.nl` and
-then login by executing the command on this server `ssh UVANETID@goedel.fnwi.uva.nl`.
+Logging in directly to the server with SSH is blocked by ICTS. Instead you log in
+via a 'gateway server' with hostname `pascal.ic.uva.nl`. For testing you can log
+in with SSH using `ssh UVANETID@pascal.ic.uva.nl` and then login by executing the
+command on this server `ssh UVANETID@goedel.fnwi.uva.nl`.
 
-For practical use you can automate this 'log through' by making sure you have a file in your home directory
-`.ssh/config` and adding a section in it
+For practical use you can automate this 'log through'. To do this:
+1. create a `.ssh` folder in your home/user directory (e.g., `/home/marco` or
+   `C:\Users\marco`)
+2. inside the newly created folder, create a `config` file (with no file extension)
+   that looks like this:
 
 ```
 Host phimathproxy
@@ -90,7 +94,7 @@ your own computer in the subdirectory '.ssh', '.ssh/id_rsa.pub' (the public SSH
 key whose content you are using above) and '.ssh/id_rsa' (a private SSH key
 that you should not share with others and that SSH uses when logging in).
 
-#### On Linux systems
+#### On Linux/Windows (with Git Bash)/MacOS systems
 
 On Linux systems, if you automate the 'log-through' for SSH as described above,
 the other programs based on SSH (like the aforementioned SFTP, SCP and Rsync)
@@ -98,57 +102,34 @@ will also use this configuration to access the server. So you can just run
 things like:
 
 ```
-rsync -r public/* phimath:/var/www/illc/events/Phi-MathReading/
+rsync -r public/* phimath:/var/www/illc/events/Phi-Math/
 ```
 
-#### On Windows systems (WinSCP users)
-
-If you use Windows and the WinSCP file-transfer client to upload files, after
-opening the program you should configure it by clicking 'New Connection' and
-first specify
+or (since not all windows machines come with the  `rsync` command preinstalled)
 
 ```
-  Host name: goedel.fnwi.uva.nl
-  User name: UVANETID
+scp -r public/* phimath:/var/www/illc/events/Phi-Math/
 ```
-
-and then as an extra step click on the 'Advanced Settings' option, navigate to
-'Connection >> Tunnel', and set
-
-```
-  [v] Connect through SSH tunnel
-  Tunnel Host name:pascal.ic.uva.nl
-  Tunnel User name: UVANETID
-```
-
-You will need to enter your password twice, once for the tunnel and once for the
-server itself, unless you already have configured passwordless login on
-`pascal.ic.uva.nl`.
-
-Other file-transfer clients may or may not have similar functionality.
-
-#### On MacOS systems
-
-On Mac systems, FileZilla doesn't support setting jump-hosts, but CyberDuck
-does.
 
 ### Website update
 
 After logging in, the site files may be found in the filesystem at
-`/var/www/illc/events/Phi-MathReading`. You can modify them there.
+`/var/www/illc/events/Phi-Math`. You can modify them there.
 
 Finally, Marco has a request that he would ask us to keep in mind when managing
 the site files: can we make sure that all files and subdirectories are created
 with 'group-writeable' permissions, and all subdirectories also with the
 'set-group-id' flag? This ensures that files and directories belong to the user
-group `www-illc-phi-mathreading-science` and are editable by all members of this
+group `www-illc-phimath-science` and are editable by all members of this
 group. To do it manually, we can use the commands
 
 ```
-chmod -R g+w /var/www/illc/events/Phi-MathReading/*
-chgrp -R www-illc-phi-mathreading-science /var/www/illc/events/Phi-MathReading
-find /var/www/illc/events/Phi-MathReading/*/ -type d -exec chmod g+s {} +
+chmod -R g+w /var/www/illc/events/Phi-Math/*
+chgrp -R www-illc-phimath-science /var/www/illc/events/Phi-Math/*
+find /var/www/illc/events/Phi-Math/* -type d -exec chmod g+s {} +
 ```
+
+(Make sure to press enter after pasting this in your terminal!)
 
 If we forgot this step, the other $\Phi$-Math board member will be unable to
 edit these files!
