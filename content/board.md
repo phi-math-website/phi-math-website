@@ -6,11 +6,11 @@ weight = 3
 +++
 
 ## Current Members
-- [Alexander Lind](https://msclogic.illc.uva.nl/people/person/5398/Alexander-Lind) (...-...)
+- [Alexander Lind](https://msclogic.illc.uva.nl/people/person/5398/Alexander-Lind) (2023-current)
 
-- [Orestis Dimou Belegratis](https://msclogic.illc.uva.nl/people/person/5551/Orestis-Dimou-Belegratis). (2023-...)
+- [Orestis Dimou Belegratis](https://msclogic.illc.uva.nl/people/person/5551/Orestis-Dimou-Belegratis). (2023-current)
 
-- [Marco de Mayda](https://www.illc.uva.nl/People/Table/person/5496/Marco-de-Mayda) (2024-...)
+- [Marco de Mayda](https://www.illc.uva.nl/People/Table/person/5496/Marco-de-Mayda) (2024-current)
 
 
 
